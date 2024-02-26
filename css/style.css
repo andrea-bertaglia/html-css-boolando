@@ -1,3 +1,127 @@
-body {
-    background-color: aquamarine;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COMMON */
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    /* debug */
+    /* height: 700px; */
+    border: 1px solid black;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+
+/* HEADER */
+header {
+    background-color: #ff6900;
+    height: 100px;
+}
+
+/* MAIN */
+main > section {
+    padding: 50px 0;
+}
+
+.col {
+    width: calc(100% / 3);
+    padding: 10px;
+}
+  
+.card {
+    position: relative;
+}
+
+.card > h4 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.none {
+    display: none;
+}
+
+.hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .hover {
+    display: inline-block;
+    z-index: 1;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.price-discounted {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
+
+.discounted {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 2;
+}
+
+.sustainability {
+    background-color: #008000;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    position: absolute;
+    bottom: 100px;
+    left: 85px;
+    z-index: 2;
+}
+
+.s-2 {
+    left: 0;
+
+}
+
+.heart {
+    background-color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 2;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    height: 80px;
 }
